@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D13DB8CE251BB71B00359B1E /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DB8CD251BB71B00359B1E /* Items.swift */; };
+		D13DB8D3251BE0B800359B1E /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DB8D2251BE0B800359B1E /* QuestionTableViewCell.swift */; };
 		D17D3305251B9AB7004CD120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D3304251B9AB7004CD120 /* AppDelegate.swift */; };
 		D17D3307251B9AB7004CD120 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D3306251B9AB7004CD120 /* SceneDelegate.swift */; };
 		D17D3309251B9AB7004CD120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D3308251B9AB7004CD120 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		D13DB8CD251BB71B00359B1E /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		D13DB8D2251BE0B800359B1E /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		D17D3301251B9AB7004CD120 /* StackQuestions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackQuestions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17D3304251B9AB7004CD120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D17D3306251B9AB7004CD120 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				D17D330F251B9AB9004CD120 /* LaunchScreen.storyboard */,
 				D17D3312251B9AB9004CD120 /* Info.plist */,
 				D13DB8CD251BB71B00359B1E /* Items.swift */,
+				D13DB8D2251BE0B800359B1E /* QuestionTableViewCell.swift */,
 			);
 			path = StackQuestions;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13DB8CE251BB71B00359B1E /* Items.swift in Sources */,
+				D13DB8D3251BE0B800359B1E /* QuestionTableViewCell.swift in Sources */,
 				D17D3309251B9AB7004CD120 /* ViewController.swift in Sources */,
 				D17D3305251B9AB7004CD120 /* AppDelegate.swift in Sources */,
 				D17D3307251B9AB7004CD120 /* SceneDelegate.swift in Sources */,
