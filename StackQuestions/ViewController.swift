@@ -13,7 +13,11 @@ class ViewController: UIViewController {
     let requestURL = URL(string: "https://api.stackexchange.com/2.2/questions?tab=week&order=desc&sort=votes&site=stackoverflow")
     let session = URLSession.shared
     
-    var requestItems: Items? = nil
+    var requestItems: Items? = nil {
+        didSet {
+            self.tableView!.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +38,6 @@ class ViewController: UIViewController {
             DispatchQueue.main.async {
                 do {
                     self.requestItems = try JSONDecoder().decode(Items.self, from: dataResponse!)
-                    self.tableView.reloadData()
                 } catch {
                     print("JSON error: \(error.localizedDescription)")
                 }
@@ -44,7 +47,7 @@ class ViewController: UIViewController {
         
     }
 }
-
+// MARK: - TableView delegate and datasource methods
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,5 +60,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.question = question
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let questionDetailViewController = storyboard?.instantiateViewController(identifier: "questionDetailViewController") as? QuestionDetailViewController else { return }
+        guard let question = requestItems?.questions[indexPath.row] else { return }
+        navigationController?.present(questionDetailViewController, animated: true, completion: {
+            questionDetailViewController.question = question
+        })
+        
     }
 }
