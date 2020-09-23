@@ -3,7 +3,7 @@
 //  StackQuestions
 //
 //  Created by Richard Paul Flores on 9/23/20.
-//
+//  Simple TableView cell; It receives and object of the type question and sets all its UI with the requiered information.
 
 import Foundation
 import UIKit
@@ -19,6 +19,13 @@ class QuestionTableViewCell: UITableViewCell {
     
     
     public var question: Question? {
+        willSet {
+            if let oldvalue = self.question {
+                if oldvalue == newValue {
+                    return
+                }
+            }
+        }
         didSet {
             self.isAnsweredImage.tintColor = question!.isAnswered ? UIColor.green : UIColor.darkGray
             self.numberOfAnswersLabel.text = String(question!.answerCount)

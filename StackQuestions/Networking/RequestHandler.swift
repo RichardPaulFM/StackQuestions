@@ -3,7 +3,8 @@
 //  StackQuestions
 //
 //  Created by Richard Paul Flores on 9/23/20.
-//
+//  The object is in charge of executing simple data tasks. Besides the method startTask, there is 'stopTask', which cancels the current data Task. Additionally, I created a variable to check for the state of the data task. I did not have the opportunity of implementing some additional features that might have made use of this additional code, nevertheless I left it.
+
 import UIKit
 
 class RequestHandler {

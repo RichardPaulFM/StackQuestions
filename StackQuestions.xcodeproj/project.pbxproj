@@ -84,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D13DB8E1251C07E000359B1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D13DB8CD251BB71B00359B1E /* Items.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D13DB8E2251C082900359B1E /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				D13DB8D2251BE0B800359B1E /* QuestionTableViewCell.swift */,
+				D13DB8D7251BE9FB00359B1E /* QuestionDetailViewControler.swift */,
+				D17D3308251B9AB7004CD120 /* ViewController.swift */,
+			);
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		D13DB8E3251C084600359B1E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D13DB8DC251BFBCC00359B1E /* RequestHandler.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		D17D32F8251B9AB6004CD120 = {
 			isa = PBXGroup;
 			children = (
@@ -107,17 +133,15 @@
 		D17D3303251B9AB7004CD120 /* StackQuestions */ = {
 			isa = PBXGroup;
 			children = (
+				D13DB8E3251C084600359B1E /* Networking */,
+				D13DB8E2251C082900359B1E /* ViewControlers */,
+				D13DB8E1251C07E000359B1E /* Models */,
 				D17D3304251B9AB7004CD120 /* AppDelegate.swift */,
 				D17D3306251B9AB7004CD120 /* SceneDelegate.swift */,
-				D17D3308251B9AB7004CD120 /* ViewController.swift */,
 				D17D330A251B9AB7004CD120 /* Main.storyboard */,
 				D17D330D251B9AB9004CD120 /* Assets.xcassets */,
 				D17D330F251B9AB9004CD120 /* LaunchScreen.storyboard */,
 				D17D3312251B9AB9004CD120 /* Info.plist */,
-				D13DB8CD251BB71B00359B1E /* Items.swift */,
-				D13DB8D2251BE0B800359B1E /* QuestionTableViewCell.swift */,
-				D13DB8D7251BE9FB00359B1E /* QuestionDetailViewControler.swift */,
-				D13DB8DC251BFBCC00359B1E /* RequestHandler.swift */,
 			);
 			path = StackQuestions;
 			sourceTree = "<group>";

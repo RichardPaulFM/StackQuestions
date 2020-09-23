@@ -3,7 +3,7 @@
 //  StackQuestions
 //
 //  Created by Richard Paul Flores on 9/23/20.
-//  The construction of the model classes was done with the help of https://app.quicktype.io/ . Some of the models were renamed to have suitable name given the nature of the project, aditionally, some of the properties of the json were ignored.
+//  The construction of the model classes was done with the help of https://app.quicktype.io/. Some of the models were renamed to have a suitable one, additionally, some of the properties of the json were ignored.
 
 import Foundation
 
@@ -22,7 +22,7 @@ struct Items: Codable {
 }
 
 // MARK: - Question
-struct Question: Codable {
+struct Question: Codable, Equatable {
     let tags: [String]
     let owner: Owner
     let isAnswered: Bool
@@ -43,6 +43,10 @@ struct Question: Codable {
         case creationDate = "creation_date"
         case questionID = "question_id"
         case link, title
+    }
+    
+    static func == (lhs: Question, rhs: Question) -> Bool {
+        lhs.questionID == rhs.questionID
     }
 }
 

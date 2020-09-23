@@ -3,7 +3,7 @@
 //  StackQuestions
 //
 //  Created by Richard Paul Flores on 9/23/20.
-//
+//  Main ViewController; It initialises everything we need to make the data task request and feed the TableView. It also contains two additional methods: The first method(refreshData) serves to refresh the TableView when the user drags it down, and the second one(filterQuestions) is to filter the results of the data task.
 
 import UIKit
 
