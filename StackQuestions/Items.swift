@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Items
 struct Items: Codable {
-    let questions: [Question]
+    var questions: [Question]
     let hasMore: Bool
     let quotaMax, quotaRemaining: Int
 
@@ -48,7 +48,7 @@ struct Question: Codable {
 
 // MARK: - Owner
 struct Owner: Codable {
-    let userID: Int
+    let userID: Int?
     let profileImage: String?
     let displayName: String
 
